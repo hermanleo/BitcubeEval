@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        echo "Welcome " . $_COOKIE['user'];
+        echo "Welcome " . $_COOKIE['user'] . $_COOKIE['pass'];
         if ($_COOKIE['remember']=="NO")
         {
             setcookie("user", "", time() - 1);
